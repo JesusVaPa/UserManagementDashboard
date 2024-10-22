@@ -1,0 +1,15 @@
+C:\Users\vapaj\source\repos\UMD\UMD.Data\bin\Debug\net8.0\UMD.Data.deps.json
+C:\Users\vapaj\source\repos\UMD\UMD.Data\bin\Debug\net8.0\UMD.Data.dll
+C:\Users\vapaj\source\repos\UMD\UMD.Data\bin\Debug\net8.0\UMD.Data.pdb
+C:\Users\vapaj\source\repos\UMD\UMD.Data\bin\Debug\net8.0\UMD.Models.dll
+C:\Users\vapaj\source\repos\UMD\UMD.Data\bin\Debug\net8.0\UMD.Models.pdb
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\UMD.Data.csproj.AssemblyReference.cache
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\UMD.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\UMD.Data.AssemblyInfoInputs.cache
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\UMD.Data.AssemblyInfo.cs
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\UMD.Data.csproj.CoreCompileInputs.cache
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\UMD.Data.csproj.Up2Date
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\UMD.Data.dll
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\refint\UMD.Data.dll
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\UMD.Data.pdb
+C:\Users\vapaj\source\repos\UMD\UMD.Data\obj\Debug\net8.0\ref\UMD.Data.dll

@@ -1,0 +1,119 @@
+﻿@model UMD.Models.User
+
+@{
+    ViewData["Title"] = "Manage Users";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["DangerMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["DangerMessage"]
+    </div>
+}
+
+<h2>Manage Users</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in ViewBag.Users)
+        {
+            <tr>
+                <td>
+                    <a asp-action="ManageUsers" asp-route-id="@user.Id">Select</a>
+                </td>
+                <td>@user.Id</td>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (Model != null)
+{
+    <form asp-action="Remove" method="post" onsubmit="return confirm('Do you confirm this deletion?');">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="submit" class="btn btn-danger" value="Remove" />
+    </form>
+}
+
+@if (Model != null)
+{
+    <h3 style="margin-top: 30px; font-size: 1rem">Personal Section:</h3>
+    <form asp-action="UpdatePersonalSection" method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+
+        <div class="form-group row">
+            <label asp-for="FirstName" class="col-sm-2 col-form-label">First Name:</label>
+            <div class="col-sm-10">
+                <input asp-for="FirstName" class="form-control" style="width: 150px" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="LastName" class="col-sm-2 col-form-label">Last Name:</label>
+            <div class="col-sm-10">
+                <input asp-for="LastName" class="form-control" style="width: 150px" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-top:10px">Update Personal Section</button>
+    </form>
+}
+
+@if (Model != null)
+{
+    <h3 style="margin-top: 30px; font-size: 1rem">Security Section:</h3>
+    <form asp-action="UpdateSecuritySection" method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+
+        <div class="form-group row">
+            <label asp-for="Email" class="col-sm-2 col-form-label">Email:</label>
+            <div class="col-sm-10">
+                <input asp-for="Email" class="form-control" style="width: 200px" value="@Model.Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Password" class="col-sm-2 col-form-label">Password:</label>
+            <div class="col-sm-10">
+                <input asp-for="Password" class="form-control" style="width: 200px" type="password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="confirmPassword" class="col-sm-2 col-form-label">Repeat the password:</label>
+            <div class="col-sm-10">
+                <input id="confirmPassword" name="confirmPassword" class="form-control" style="width: 200px" type="password" />
+                <span class="text-danger" id="confirmPasswordValidation"></span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-top:10px">Update Security Section</button>
+    </form>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

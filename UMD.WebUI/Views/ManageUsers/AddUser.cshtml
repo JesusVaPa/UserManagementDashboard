@@ -1,0 +1,74 @@
+﻿@model UMD.Models.User
+
+@{
+    ViewData["Title"] = "Add User";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["DangerMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["DangerMessage"]
+    </div>
+}
+
+<h1>Add User</h1>
+
+<form asp-action="AddUser" method="post">
+    <div class="form-group" style="margin-top: 20px">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" style="width: 200px; height: 25px" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group" style="margin-top: 20px">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" style="width: 200px; height: 25px" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group" style="margin-top: 20px">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" style="width: 200px; height: 25px" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group" style="margin-top: 20px">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" style="width: 200px; height: 25px" type="password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group" style="margin-top: 20px">
+        <label for="confirmPassword">Repeat the password</label>
+        <input id="confirmPassword" name="confirmPassword" class="form-control" style="width: 200px; height: 25px" type="password" />
+        <span class="text-danger" id="confirmPasswordValidation"></span>
+    </div>
+
+    <br />
+
+    <button type="submit" style="background-color: #fafafa; color: #000; border-color: #000; width: 270px; height: 60px" class="btn btn-primary">
+        Add
+    </button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+            const password = document.querySelector('input[name="Password"]').value;
+            const confirmPassword = document.querySelector('input[name="confirmPassword"]').value;
+
+            if (password !== confirmPassword) {
+                event.preventDefault();
+                document.getElementById('confirmPasswordValidation').textContent = "Passwords do not match.";
+            }
+        });
+    </script>
+}

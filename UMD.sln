@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMD.WebUI", "UMD.WebUI\UMD.WebUI.csproj", "{B3A88D75-7796-46D9-84A5-22CEF809B872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMD.Data", "UMD.Data\UMD.Data.csproj", "{79005DF3-5B3B-479F-A780-39A09D3A3B3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMD.Models", "UMD.Models\UMD.Models.csproj", "{B9725A80-A932-46B4-BB1E-05789D1DC321}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3A88D75-7796-46D9-84A5-22CEF809B872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A88D75-7796-46D9-84A5-22CEF809B872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A88D75-7796-46D9-84A5-22CEF809B872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A88D75-7796-46D9-84A5-22CEF809B872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79005DF3-5B3B-479F-A780-39A09D3A3B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79005DF3-5B3B-479F-A780-39A09D3A3B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79005DF3-5B3B-479F-A780-39A09D3A3B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79005DF3-5B3B-479F-A780-39A09D3A3B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9725A80-A932-46B4-BB1E-05789D1DC321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9725A80-A932-46B4-BB1E-05789D1DC321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9725A80-A932-46B4-BB1E-05789D1DC321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9725A80-A932-46B4-BB1E-05789D1DC321}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24D4C11E-0488-4D78-BC97-98A6CC88D2DB}
+	EndGlobalSection
+EndGlobal

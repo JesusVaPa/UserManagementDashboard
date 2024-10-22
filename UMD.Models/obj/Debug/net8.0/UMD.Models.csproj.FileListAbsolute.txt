@@ -1,0 +1,12 @@
+C:\Users\vapaj\source\repos\UMD\UMD.Models\bin\Debug\net8.0\UMD.Models.deps.json
+C:\Users\vapaj\source\repos\UMD\UMD.Models\bin\Debug\net8.0\UMD.Models.dll
+C:\Users\vapaj\source\repos\UMD\UMD.Models\bin\Debug\net8.0\UMD.Models.pdb
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\UMD.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\UMD.Models.AssemblyInfoInputs.cache
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\UMD.Models.AssemblyInfo.cs
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\UMD.Models.csproj.CoreCompileInputs.cache
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\UMD.Models.dll
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\refint\UMD.Models.dll
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\UMD.Models.pdb
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\ref\UMD.Models.dll
+C:\Users\vapaj\source\repos\UMD\UMD.Models\obj\Debug\net8.0\UMD.Models.csproj.AssemblyReference.cache
